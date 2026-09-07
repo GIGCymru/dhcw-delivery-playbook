@@ -21,5 +21,8 @@ DHCW's engineering standards are grounded in the 14 Continuous Delivery Markers.
 | **13. Automated Deployment** | Deployment is automated and repeatable. Human intervention in the deployment process is a risk, not a safety net. |
 | **14. Observability** | The team can understand the state of the system in production from the outside. Logging, monitoring, and alerting are not optional. |
 
+!!! tip "Software Engineering Handbook"
+    See also DHCW's [Software Engineering Handbook](https://gigcymru.github.io/dhcw-software-engineering-handbook/).
+
 !!! info "AI-assisted engineering"
     DHCW is rolling out GitHub Copilot and other AI tooling to engineering teams. These tools amplify good engineering practice: they do not substitute for it. Teams should ensure solid foundations (version control, automated testing, trunk-based development) before introducing AI tooling. A team with weak practices and AI assistance will produce poor code faster.
