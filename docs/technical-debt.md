@@ -15,6 +15,9 @@ Technical debt covers anything that makes the system harder to change, operate, 
 
 Not every imperfection is debt worth tracking. Record the items that carry a real cost, either because they slow the team down today or because they represent a risk we will have to pay down later.
 
+!!! tip "Tech Debt Definition"
+    See the Technical Design Authority (TDA) agreed definition of [Technical Debt](https://gigcymru.github.io/architecture/design-authority/dhcw/technical-debt/).
+
 ## How we manage technical debt
 
 Every debt item is captured as a ticket in Azure DevOps so that it is visible, estimable, and can be prioritised alongside other work. When we take on debt deliberately, we note the reason and the intended payback so the decision is transparent to the whole team.
