@@ -1,15 +1,16 @@
 # MkDocs configuration.
 # This file also works with Zensical, which reads mkdocs.yml natively.
-# Configured for DHCW-Digital-Health-and-Care-Wales/dhcw-delivery-playbook.
+# Configured for GIGCymru/dhcw-delivery-playbook.
 
 site_name: DHCW Product and Service Delivery Playbook
+site_url: https://gigcymru.github.io/dhcw-delivery-playbook/
 site_description: How DHCW builds healthy teams, and how those teams build and run digital services for the people of Wales.
 site_author: Digital Health and Care Wales
 copyright: "© 2026 Digital Health and Care Wales. Content available under the Open Government Licence v3.0."
 
 # These three lines drive the "Edit this page" links and the repo button.
-repo_url: https://github.com/DHCW-Digital-Health-and-Care-Wales/dhcw-delivery-playbook
-repo_name: DHCW-Digital-Health-and-Care-Wales/dhcw-delivery-playbook
+repo_url: https://github.com/GIGCymru/dhcw-delivery-playbook
+repo_name: GIGCymru/dhcw-delivery-playbook
 edit_uri: edit/main/docs/
 
 theme:

@@ -6,7 +6,7 @@ The content lives as Markdown in `docs/`. The site is built with [Zensical](http
 
 ## Read it online
 
-Once published, the site is at `https://dhcw-digital-health-and-care-wales.github.io/dhcw-delivery-playbook/`.
+Once published, the site is at `https://gigcymru.github.io/dhcw-delivery-playbook/`.
 
 ## Run it locally
 
