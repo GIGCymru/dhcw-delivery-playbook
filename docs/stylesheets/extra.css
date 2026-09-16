@@ -85,6 +85,7 @@
 /* Text links — NHS focus mixin: yellow highlight + dark underline bar. */
 .md-typeset a:focus-visible,
 .md-nav__link:focus-visible,
+.md-path__link:focus-visible,
 .md-footer a:focus-visible,
 .md-typeset .md-content a:focus-visible {
   outline: none;
@@ -421,12 +422,19 @@
    breadcrumb apart from the content with a clear rule and spacing. */
 .md-path {
   margin: 0 0 var(--dhcw-space-4);
-  padding-bottom: var(--dhcw-space-3);
+  padding: var(--dhcw-space-3) var(--dhcw-space-4);
   border-bottom: 1px solid var(--dhcw-border);
   font-size: var(--dhcw-fs-small);
 }
 .md-path__link {
   color: var(--md-typeset-a-color); /* scheme-aware link colour (works in light and dark mode) */
+}
+
+@media screen and (max-width: 640px) {
+  .md-path {
+    padding-left: var(--dhcw-space-3);
+    padding-right: var(--dhcw-space-3);
+  }
 }
 
 /* -----------------------------------------------------------------------------
