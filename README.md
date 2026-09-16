@@ -14,10 +14,12 @@ You need Python 3.10 or newer.
 
 ```bash
 pip install -r requirements.txt
-zensical serve
+python -m zensical serve
 ```
 
-Then open `http://localhost:8000`. The site rebuilds as you edit any file in `docs/`. To produce the static site without serving it, run `zensical build --strict --clean` (output goes to `site/`).
+(Or `zensical serve` if installed to your `PATH`.) This starts the Zensical development server.
+
+Then open `http://localhost:8000`. The development server rebuilds the site as you edit any file in `docs/`. To produce the static site without running the server, run `python -m zensical build --strict --clean` (output goes to `site/`).
 
 ## Make a change
 
