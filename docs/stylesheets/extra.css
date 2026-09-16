@@ -159,6 +159,7 @@
 }
 .md-footer {
   background-color: var(--dhcw-navy);
+  color: var(--dhcw-text-inverse); /* force white footer text/icons on navy — no dark-on-dark */
 }
 .md-footer-meta {
   background-color: var(--dhcw-navy-dark);
@@ -384,7 +385,14 @@
   box-shadow: inset 3px 0 0 var(--dhcw-navy);
 }
 
-/* Footer — keep the previous/next pagination and copyright legible on navy. */
+/* Footer — keep the previous/next pagination, arrow icons, and copyright legible on navy.
+   .md-icon:not(:disabled) sets color to dark charcoal (--md-default-fg-color--lighter),
+   which makes arrow icons appear black on navy; force white, but preserve dark text
+   when the NHS high-visibility yellow focus indicator is active. */
+.md-footer__link,
+.md-footer__button,
+.md-footer__button.md-icon,
+.md-footer__button.md-icon:not(:disabled),
 .md-footer__title,
 .md-footer__direction,
 .md-footer-copyright,
@@ -392,8 +400,20 @@
 .md-footer .md-copyright__highlight {
   color: var(--dhcw-text-inverse);
 }
-.md-footer__link:hover {
+.md-footer__link:hover,
+.md-footer__link:focus {
   background-color: var(--dhcw-navy-dark);
+  color: var(--dhcw-text-inverse);
+}
+.md-footer__link:hover .md-footer__button,
+.md-footer__link:focus .md-footer__button,
+.md-footer .md-footer__button:hover {
+  color: var(--dhcw-text-inverse);
+}
+.md-footer a:focus-visible .md-footer__button,
+.md-footer a:focus-visible .md-footer__title,
+.md-footer a:focus-visible .md-footer__direction {
+  color: var(--dhcw-focus-text);
 }
 
 /* Breadcrumbs (navigation.path) — NHS Wales wayfinding above the page title.
