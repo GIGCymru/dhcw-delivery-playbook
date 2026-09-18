@@ -53,6 +53,9 @@ The business analyst and product owner bring prepared tickets to the team. The t
 
 Refinement is collaborative. A ticket that only the BA and PO understand at the end of refinement has not been refined.
 
+!!! note "Learn more"
+    [You can find out more about backlog refinement here.](https://www.mountaingoatsoftware.com/agile/product-backlog-refinement-grooming)
+
 ## Sprint health
 
 ### Stable sprints
