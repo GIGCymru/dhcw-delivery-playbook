@@ -2,7 +2,7 @@
 
 We build services that hold some of the most sensitive information there is: people's health records. We also build services that clinicians use to make decisions about care. That places two heavy duties on every team. Keep people's data safe and private. Make sure the service is safe to use clinically. Both are things we design in and keep working at, all the way through.
 
-The [Backlog structure](backlog-structure.md) chapter lists security, privacy, and clinical safety as controls a team can't waive. This chapter is about how we meet them.
+The [Definitions of Ready and Done](definition-of-ready-and-done.md#cross-cutting-controls) chapter lists security, privacy, and clinical safety as controls a team can't waive. This chapter is about how we meet them.
 
 ## Secure by design
 

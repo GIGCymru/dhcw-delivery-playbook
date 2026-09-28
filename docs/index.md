@@ -14,7 +14,7 @@ Helping teams thrive so they can make digital a force for good in health and car
 
 DHCW delivers digital services that clinicians, patients, and the people of Wales depend on every day. Getting that delivery right matters.
 
-This playbook describes how our product and service delivery teams work. It covers the roles we use, how we organise our backlogs, the cadence of our ceremonies, and the engineering standards that make sustained delivery possible. It is grounded in real experience building and running services at DHCW, and it aligns to the [Digital Service Standard for Wales](https://digitalpublicservices.gov.wales/guidance-and-standards/digital-service-standard-wales), [DDaT job families](https://ddat-capability-framework.service.gov.uk/), and our own [Target Operating Model](TODO-TOM-URL).
+This playbook describes how our product and service delivery teams work. It covers the roles we use, how we organise our backlogs, the cadence of our ceremonies, and the engineering standards that make sustained delivery possible. It is grounded in real experience building and running services at DHCW, and it aligns to the [Digital Service Standard for Wales](https://digitalpublicservices.gov.wales/guidance-and-standards/digital-service-standard-wales), [DDaT job families](https://ddat-capability-framework.service.gov.uk/), and our own [Target Operating Model](https://nhswales365.sharepoint.com/sites/DHCW-Intranet/SitePages/Introducing-the-New-Target-Operating-Model.aspx).
 
 We want you to help us shape this playbook. If something does not reflect how good delivery works in your context, tell us. Every suggestion, challenge and improvement helps us build a stronger shared foundation for everyone.
 
