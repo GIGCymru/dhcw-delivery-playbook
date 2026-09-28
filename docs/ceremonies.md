@@ -49,7 +49,9 @@ Retrospectives that consistently produce the same actions are a signal that some
 
 **Timing:** At least once per sprint, approximately 1 hour. More sessions may be needed to maintain a two-to-three sprint runway of refined work.
 
-The business analyst and product owner bring prepared tickets to the team. The team reviews the requirements, asks questions, and exercises the right to reject any ticket that is too large, too vague, or doesn't meet the Definition of Ready. If a ticket passes, the team estimates it together. ADO is updated with any additional detail, the estimate, and the ticket is moved to ready for development.
+Backlog refinement is a collaborative team activity. Engineers and test engineers help shape stories before refinement, and the acceptance criteria are developed together to build shared understanding, with the business analyst on hand to coordinate, facilitate, and record the outcomes. The team reviews the requirements, asks questions, and exercises the right to reject any ticket that is too large, too vague, or doesn't meet the Definition of Ready. If a ticket passes, the team estimates it together. ADO is updated with any additional detail, the estimate, and the ticket is moved to ready for development.
+
+Refining individual tickets is separate from ordering and prioritising the backlog, which is covered in [keeping the backlog healthy](backlog-management.md#keeping-the-backlog-healthy).
 
 Refinement is collaborative. A ticket that only the BA and PO understand at the end of refinement has not been refined.
 
