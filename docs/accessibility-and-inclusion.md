@@ -2,7 +2,7 @@
 
 We build services for everyone in Wales. That includes people who use a screen reader, people who can't use a mouse, people with low vision, people who find reading hard, people on old devices and slow connections, and people who would rather not use a computer at all. A service that works for some of these people and not others is only half built.
 
-Accessibility and Welsh language are already set out as controls a team can't waive (see [Backlog structure](backlog-structure.md)). This chapter explains what meeting them well looks like in practice.
+Accessibility and Welsh language are already set out as controls a team can't waive (see [Definitions of Ready and Done](definition-of-ready-and-done.md#cross-cutting-controls)). This chapter explains what meeting them well looks like in practice.
 
 ## Design for everyone from the start
 
