@@ -416,17 +416,14 @@
 .md-footer a:focus-visible .md-footer__direction {
   color: var(--dhcw-focus-text);
 }
-.md-footer a:not(.md-footer__link) {
+/* Inline footer links (copyright, analytics settings). The extra specificity
+   beats the theme's own `html .md-footer-meta.md-typeset a:not(:focus, :hover)`. */
+html .md-footer-meta.md-typeset a:not(:focus, :hover) {
   color: var(--dhcw-text-inverse);
   text-decoration: underline;
 }
-.md-footer a:not(.md-footer__link):hover {
-  color: var(--dhcw-text-inverse);
-  text-decoration: underline;
-}
-.md-footer a:not(.md-footer__link):focus-visible {
+.md-footer-meta.md-typeset a:focus-visible {
   color: var(--dhcw-focus-text);
-  text-decoration: none;
 }
 
 /* Breadcrumbs (navigation.path) — NHS Wales wayfinding above the page title.

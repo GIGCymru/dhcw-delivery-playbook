@@ -36,8 +36,9 @@ jobs:
           path: site
 
   accessibility:
-    # Automated WCAG 2.2 AA check (axe-core via pa11y-ci). Fails on serious
-    # violations. Runs on every PR and push, in parallel with the build.
+    # Automated WCAG 2.2 AA check (axe-core via Playwright). Fails on violations
+    # and on unreviewed "needs review" results. Runs on every PR and push, in
+    # parallel with the build.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -49,9 +50,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: npm install -g pa11y-ci http-server playwright
-      - name: Accessibility checks (WCAG 2.2 AA, fail on serious violations)
-        run: ./scripts/check-accessibility.sh
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Accessibility checks (WCAG 2.2 AA)
+        run: npm run a11y
 
   deploy:
     needs: [build, accessibility]
