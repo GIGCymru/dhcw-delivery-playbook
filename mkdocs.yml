@@ -6,7 +6,9 @@ site_name: DHCW Product and Service Delivery Playbook
 site_url: https://gigcymru.github.io/dhcw-delivery-playbook/
 site_description: How DHCW builds healthy teams, and how those teams build and run digital services for the people of Wales.
 site_author: Digital Health and Care Wales
-copyright: "© 2026 Digital Health and Care Wales. Content available under the Open Government Licence v3.0."
+copyright: >-
+  © 2026 Digital Health and Care Wales. Content available under the Open Government Licence v3.0. –
+  <a href="#__consent">Change cookie settings</a>
 
 # These three lines drive the "Edit this page" links and the repo button.
 repo_url: https://github.com/GIGCymru/dhcw-delivery-playbook
@@ -15,6 +17,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: doc/overrides
   language: en
   # GIG CYMRU / NHS WALES masthead logo — white SVG, sits on the navy header.
   # Source: DHCW NHS Wales component library (docs/assets/nhsw-logo.svg).
@@ -55,6 +58,20 @@ extra_css:
 # Remove the default "Made with Material for MkDocs" generator notice.
 extra:
   generator: false
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to optimise site functionality and give you the best
+      possible experience, recognise your repeated visits and preferences, as
+      well as to measure the effectiveness of our site and whether
+      users find what they're searching for. With your consent, you're helping
+      us to make our site better.
+    cookies:
+      analytics:
+        name: Simple Analytics
+        checked: true
+  analytics:
+    provider: simple
 
 markdown_extensions:
   - admonition
