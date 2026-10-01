@@ -17,7 +17,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  custom_dir: doc/overrides
+  custom_dir: docs/overrides
   language: en
   # GIG CYMRU / NHS WALES masthead logo — white SVG, sits on the navy header.
   # Source: DHCW NHS Wales component library (docs/assets/nhsw-logo.svg).

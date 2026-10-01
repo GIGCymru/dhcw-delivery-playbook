@@ -416,6 +416,18 @@
 .md-footer a:focus-visible .md-footer__direction {
   color: var(--dhcw-focus-text);
 }
+.md-footer a:not(.md-footer__link) {
+  color: var(--dhcw-text-inverse);
+  text-decoration: underline;
+}
+.md-footer a:not(.md-footer__link):hover {
+  color: var(--dhcw-text-inverse);
+  text-decoration: underline;
+}
+.md-footer a:not(.md-footer__link):focus-visible {
+  color: var(--dhcw-focus-text);
+  text-decoration: none;
+}
 
 /* Breadcrumbs (navigation.path) — NHS Wales wayfinding above the page title.
    Material renders the chevron separators and link colours; this sets the
