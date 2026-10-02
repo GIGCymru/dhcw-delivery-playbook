@@ -416,6 +416,15 @@
 .md-footer a:focus-visible .md-footer__direction {
   color: var(--dhcw-focus-text);
 }
+/* Inline footer links (copyright, analytics settings). The extra specificity
+   beats the theme's own `html .md-footer-meta.md-typeset a:not(:focus, :hover)`. */
+html .md-footer-meta.md-typeset a:not(:focus, :hover) {
+  color: var(--dhcw-text-inverse);
+  text-decoration: underline;
+}
+.md-footer-meta.md-typeset a:focus-visible {
+  color: var(--dhcw-focus-text);
+}
 
 /* Breadcrumbs (navigation.path) — NHS Wales wayfinding above the page title.
    Material renders the chevron separators and link colours; this sets the

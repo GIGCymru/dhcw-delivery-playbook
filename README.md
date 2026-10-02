@@ -37,17 +37,24 @@ The brand is driven by design tokens in `docs/stylesheets/_tokens.css` (sourced 
 
 ## Accessibility
 
-The site targets WCAG 2.2 AA. Every pull request and every push runs an automated accessibility check in CI ([pa11y-ci](https://github.com/pa11y/pa11y-ci) with the axe-core runner, configured in `.pa11yci.json`); the build fails on serious violations, and the site only deploys when the check passes.
+The site targets WCAG 2.2 AA. Every pull request and every push runs an automated accessibility check in CI ([axe-core](https://github.com/dequelabs/axe-core) driven by Playwright, in `scripts/check-accessibility.js`); the build fails on any violation or unreviewed "needs review" result, and the site only deploys when the check passes.
 
 The brand tokens in `docs/stylesheets/_tokens.css` are chosen to meet AA contrast (body text and links at least 4.5:1, large text and UI at least 3:1), the keyboard focus indicator uses the NHS high-visibility yellow, there is a visible skip link, and motion respects `prefers-reduced-motion`.
 
 To run the check locally you need Node.js, then:
 
 ```bash
+npm ci
+npx playwright install chromium
 zensical build --clean
-npx http-server site -p 8080 &
-npx pa11y-ci
+npm run a11y
 ```
+
+The script serves `site/` and audits every page in the sitemap, plus the consent banner. It removes the theme's stray full-height overlay element first, because that element stops axe working out background colours. The few results checked by hand are listed in `scripts/check-accessibility.js`. Set `PORT` to use a port other than 8080.
+
+## Analytics
+
+The site uses [Simple Analytics](https://www.simpleanalytics.com/), which is cookieless. It is on by default and visitors can opt out from the banner or the "Change analytics settings" footer link. The banner text is in `extra.consent` in `mkdocs.yml`, and the loader is the template override in `overrides/partials/integrations/analytics/simple.html`.
 
 ## Contributing
 

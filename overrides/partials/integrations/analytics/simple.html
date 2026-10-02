@@ -1,0 +1,12 @@
+<script>
+  // Opt-out: Simple Analytics is cookieless, so load it unless the visitor declined in the banner.
+  (function () {
+    var consent = __md_get("__consent")
+    if (consent && !consent.analytics) return
+
+    var script = document.createElement("script")
+    script.async = true
+    script.src = "https://scripts.simpleanalyticscdn.com/latest.js"
+    document.head.appendChild(script)
+  })()
+</script>

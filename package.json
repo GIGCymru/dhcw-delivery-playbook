@@ -1,0 +1,13 @@
+{
+  "name": "dhcw-delivery-playbook",
+  "private": true,
+  "description": "Tooling for the DHCW Delivery Playbook site (accessibility checks).",
+  "scripts": {
+    "a11y": "node scripts/check-accessibility.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "http-server": "^14.1.1",
+    "playwright": "^1.63.0"
+  }
+}
