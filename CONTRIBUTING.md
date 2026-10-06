@@ -15,4 +15,4 @@ All changes are reviewed in the open.
 
 British English. No em dashes and no exclamation marks. Plain language, short
 sentences, natural contractions. Write "DHCW", never "the DHCW". The playbook is
-marked Draft for Discussion until a version is finalised.
+marked Beta until a version is finalised.
